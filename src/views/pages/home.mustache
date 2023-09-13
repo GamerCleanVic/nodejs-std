@@ -1,0 +1,28 @@
+{{>partials/header}}
+    
+    Opa, tudo bem {{ user.name }}?
+    {{#showOld}}
+        Como vai a vida?
+    {{/showOld}}
+    <hr>
+
+    <h2>Produtos</h2>
+    <ul>
+        {{#products}}
+            {{>partials/productItem}}
+        {{/products}}
+    </ul><hr>
+
+    <h2>Frases do dia</h2>
+    <ul>
+        {{#frasesDoDia}}
+            <li>{{.}}</li>
+        {{/frasesDoDia}}
+
+        <!-- Else -->
+        {{^frasesDoDia}}
+            "Não temos frases motivacionais hj."
+        {{/frasesDoDia}}
+    </ul>
+    
+{{>partials/footer}}
