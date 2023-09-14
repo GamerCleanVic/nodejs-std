@@ -33,6 +33,10 @@ router.get('/sobre', (req: Request, res: Response)=>{
     res.render('pages/sobre');
 });
 
+router.get('/image01', (req: Request, res: Response)=>{    
+    res.render('pages/image01');
+});
+
 router.get('/nome', (req: Request, res: Response)=>{
     console.log("query string", req.query);
 
