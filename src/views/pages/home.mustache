@@ -13,6 +13,13 @@
         {{/products}}
     </ul><hr>
 
+    <h2>Produtos à partir de R$ 12</h2>
+    <ul>
+        {{#expensives}}
+            {{>partials/productItem}}
+        {{/expensives}}
+    </ul><hr>
+
     <h2>Frases do dia</h2>
     <ul>
         {{#frasesDoDia}}
